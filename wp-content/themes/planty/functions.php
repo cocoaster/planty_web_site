@@ -205,7 +205,7 @@ function ajouter_mon_script() {
 
 // Ajout de l'item Admin dans le menu mobile
 jQuery(document).ready(function($) {
-    var adminUrl = "<?php echo admin_url(); ?>";
+    var adminUrl = "<?php echo esc_url(admin_url()); ?>";
     var newItem = '<li class="menu-item"><a href="' + adminUrl + '">Admin</a></li>';
     
     if ( $(window).width() < 1068 ) {
