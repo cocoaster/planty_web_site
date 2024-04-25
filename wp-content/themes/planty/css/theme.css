@@ -1238,6 +1238,11 @@ h3{
     }
   
 }
+@media (max-width:350px) {
+  .site-logo{
+    width: 80% !important;
+  }
+}
 
 /* Pour téléphones de très petites tailles */
 @media (max-width: 300px) {
