@@ -131,7 +131,7 @@ add_action('wpcf7_before_send_mail', 'custom_dynamic_field_in_mail_content');
 
 function my_form_submission_handler($contact_form) {
     // Après le traitement, rediriger vers une URL spécifique sans renvoyer de données au rechargement de la page
-    $url = 'http://localhost/planty/?page_id=14#wpcf7-f631-p14-o1'; // URL spécifique avec ancre
+    $url = 'confirmation_page.php?submission=success'; // URL spécifique avec ancre
 
     wp_redirect($url); // Effectue la redirection vers l'URL spécifiée
     exit(); // Arrête l'exécution du script pour s'assurer que rien d'autre n'est exécuté après la redirection
